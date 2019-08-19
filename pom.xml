@@ -138,12 +138,14 @@
                         <webdriver.driver>provided</webdriver.driver>
                         <webdriver.timeouts.implicitlywait>5000</webdriver.timeouts.implicitlywait>
                         <webdriver.provided.type>mydriver</webdriver.provided.type>
-                        <webdriver.provided.mydriver>driver.MyChromeDriver</webdriver.provided.mydriver>
+                        <webdriver.provided.mydriver>driver.MyFirefoxDriver</webdriver.provided.mydriver>
                         <thucydides.driver.capabilities>mydriver</thucydides.driver.capabilities>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>
                     <execution>
+                    	<id>CucumberRunner</id>
+                    	<phase>integration-test</phase>
                         <goals>
                             <goal>integration-test</goal>
                             <goal>verify</goal>
